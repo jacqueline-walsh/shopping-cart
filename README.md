@@ -1,3 +1,7 @@
+# Shopping Cart
+
+<img class="text-center" src="https://portfolio-jacqueline-walsh.s3.eu-west-1.amazonaws.com/shopping-cart.png">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
