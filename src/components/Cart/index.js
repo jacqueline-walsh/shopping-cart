@@ -84,7 +84,9 @@ const Cart = () => {
           Proceed to Checkout
         </Button>
         <Link to="/">
-          <Button type="button">Home</Button>
+          <Button type="button" style={{ width: '100%' }}>
+            Home
+          </Button>
         </Link>
       </div>
     </div>
