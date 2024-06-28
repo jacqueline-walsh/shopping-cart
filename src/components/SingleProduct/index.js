@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 import Rating from '../Rating';
 import { CartState } from '../../context/Context';
 import '../style.css';
-const SingleProduct = ({ prod, key }) => {
+const SingleProduct = ({ prod }) => {
   const {
     state: { cart },
     dispatch,
