@@ -1,4 +1,7 @@
 /* header styles */
+.cart {
+  display: flex;
+}
 
 .header {
   display: block;
@@ -72,7 +75,7 @@
 }
 
 .summary {
-  width: 30%;
+  width: 22%;
 }
 
 /* Media Queries */
