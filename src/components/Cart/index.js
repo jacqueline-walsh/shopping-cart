@@ -4,6 +4,7 @@ import '../style.css';
 import { ListGroup, Button, Col, Row, Form, Image } from 'react-bootstrap';
 import Rating from '../Rating';
 import { AiFillDelete } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const {
@@ -75,12 +76,16 @@ const Cart = () => {
       <div className="filters summary">
         <span className="title">Subtotal ({cart.length}) items</span>
         <span style={{ fontWeight: 700, fontSize: 20 }}>Total €{total}</span>
-        <Button type="button" disabled={cart.length === 0}>
+        <Button
+          type="button"
+          style={{ marginBottom: 10 }}
+          disabled={cart.length === 0}
+        >
           Proceed to Checkout
         </Button>
-        <Button type="button" Link to="/" style={{ marginTop: 5 }}>
-          Proceed to Home
-        </Button>
+        <Link to="/">
+          <Button type="button">Home</Button>
+        </Link>
       </div>
     </div>
   );
