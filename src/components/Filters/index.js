@@ -9,7 +9,6 @@ const Filters = () => {
     productDispatch,
   } = CartState();
 
-  console.log(byStock, byFastDelivery, sort, byRating);
   return (
     <div className="filters">
       <span className="title">Filter Products</span>

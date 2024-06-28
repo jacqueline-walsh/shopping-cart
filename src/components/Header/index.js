@@ -50,7 +50,7 @@ const Header = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu style={{ minWidth: 370 }}>
               {cart.length > 0 ? (
-                <>
+                <div>
                   {cart.map((prod) => (
                     <span className="cartitem" key={prod.id}>
                       <img
@@ -79,7 +79,7 @@ const Header = () => {
                       Go To Cart
                     </Button>
                   </Link>
-                </>
+                </div>
               ) : (
                 <span style={{ padding: 10 }}>Cart is Empty!</span>
               )}
