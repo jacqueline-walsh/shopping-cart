@@ -78,6 +78,9 @@ const Cart = () => {
         <Button type="button" disabled={cart.length === 0}>
           Proceed to Checkout
         </Button>
+        <Button type="button" Link to="/" style={{ marginTop: 5 }}>
+          Proceed to Home
+        </Button>
       </div>
     </div>
   );
