@@ -6,11 +6,11 @@ import Cart from './components/Cart';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.REACT_APP_URI}>
+    <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/shopping-cart/" exact element={<Home />} />
+        <Route path="/shopping-cart/cart/" element={<Cart />} />
       </Routes>
     </BrowserRouter>
   );
