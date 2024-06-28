@@ -1,18 +1,18 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Cart from './components/Cart';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
       <Routes>
-        <Route path="/shopping-cart/" exact element={<Home />} />
-        <Route path="/shopping-cart/cart/" element={<Cart />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
